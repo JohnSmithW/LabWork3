@@ -1,0 +1,139 @@
+body {
+  justify-content: center;
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+body.night {
+  background-color: black;
+}
+
+.month-block {
+  border-top: 0.1vmax solid rgba(109, 109, 109, 0.527);
+  border-bottom: 0.1vmax solid rgba(109, 109, 109, 0.527);
+}
+
+.month {
+  display: flex;
+}
+
+.month h1 {
+  color: rgba(109, 109, 109, 0.527);
+  font-weight: 200;
+}
+
+.night .month b {
+  color: white;
+}
+
+.month b {
+  color: black;
+}
+
+.weekdays {
+  display: flex;
+  justify-content: center;
+  height: 30vmax;
+}
+
+.month-block .weekdays {
+  height: 3vmax;
+}
+
+.weekdays div {
+  width: 15vmax;
+  height: 4vmax;
+  font-size: 2vmax;
+}
+
+.night .weekdays div {
+  color: white;
+}
+
+.days-numbers {
+  width: 14%;
+}
+
+.days-numbers div {
+  position: relative;
+  width: 14vmax;
+  height: 4vmax;
+  border-right: 0.1vmax solid rgba(109, 109, 109, 0.527);
+  border-bottom: 0.1vmax solid rgba(109, 109, 109, 0.527);
+}
+
+.night .days-numbers div {
+  color: white;
+}
+
+.highlighted {
+  color: rgba(109, 109, 109, 0.527);
+}
+
+.weekends {
+  color: rgba(107, 107, 107, 0.527);
+  background-color: rgb(230, 230, 230);
+}
+
+.night .weekends {
+  background-color: rgb(46, 46, 46);
+}
+
+.check-block {
+  display: flex;
+  justify-content: center;
+  width: 2%;
+}
+
+.night .check-block {
+  color: white;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  padding-left: 2%;
+}
+
+label::before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 2vmax;
+  background-color: black;
+  margin-right: 1%;
+  transition: 0.5s;
+}
+
+input[type="checkbox"]:checked+label::before {
+  background-color: white;
+  border-radius: 50%;
+}
+
+.holidays {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  margin-left: 20%;
+  color: red;
+  font-size: 1.3vmax;
+}
+
+.days-numbers .today {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.7vmax;
+  height: 1.7vmax;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  border: 0;
+  outline: 0;
+  padding: 2%;
+  font-size: 1.3vmax;
+  position: absolute;
+  left: 1%;
+  top: 5%;
+}
