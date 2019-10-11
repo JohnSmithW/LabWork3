@@ -82,6 +82,7 @@ body.night {
   display: flex;
   justify-content: center;
   width: 2%;
+  transform: translateY(2vmax);
 }
 
 .night .check-block {
