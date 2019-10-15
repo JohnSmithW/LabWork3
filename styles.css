@@ -10,7 +10,7 @@ body {
   height: 100vmin;
 }
 
-.calendar-container{
+.calendar-container {
   transform: scale(0.99);
   width: 100vmax;
 }
@@ -86,6 +86,10 @@ body {
 }
 
 .different-months {
+  color: rgba(109, 109, 109, 0.527);
+}
+
+.weekends-names {
   color: rgba(109, 109, 109, 0.527);
 }
 
