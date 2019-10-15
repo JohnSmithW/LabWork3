@@ -88,7 +88,9 @@ body {
 .different-months {
   color: rgba(109, 109, 109, 0.527);
 }
-
+.night .different-months{
+  opacity: 0.4;
+}
 .weekends-names {
   color: rgba(109, 109, 109, 0.527);
 }
