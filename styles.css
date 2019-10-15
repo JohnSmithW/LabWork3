@@ -1,10 +1,18 @@
 body {
   justify-content: center;
   font-family: 'M PLUS 1p', sans-serif;
+  margin: 0;
 }
 
-body.night {
+.calendar-container.night {
   background-color: black;
+  width: 100vmax;
+  height: 100vmin;
+}
+
+.calendar-container{
+  transform: scale(0.99);
+  width: 100vmax;
 }
 
 .month-block {
@@ -21,18 +29,30 @@ body.night {
   font-weight: 200;
 }
 
-.night .month b {
+.night .month strong {
   color: white;
 }
 
-.month b {
+.month strong {
   color: black;
+}
+
+.day-names {
+  display: flex;
+  justify-content: center;
+  height: 3vmax;
+}
+
+.day-names div {
+  width: 15vmax;
+  height: 4vmax;
+  font-size: 2vmax;
 }
 
 .weekdays {
   display: flex;
   justify-content: center;
-  height: 30vmax;
+  flex-direction: column;
 }
 
 .month-block .weekdays {
@@ -40,22 +60,22 @@ body.night {
 }
 
 .weekdays div {
-  width: 15vmax;
-  height: 4vmax;
-  font-size: 2vmax;
+  font-size: 1.5vmax;
 }
 
-.night .weekdays div {
+.night .day-names div {
   color: white;
 }
 
 .days-numbers {
-  width: 14%;
+  width: 100vmax;
+  display: flex;
+  flex-direction: row;
 }
 
 .days-numbers div {
   position: relative;
-  width: 14vmax;
+  width: 14.2vmax;
   height: 4vmax;
   border-right: 0.1vmax solid rgba(109, 109, 109, 0.527);
   border-bottom: 0.1vmax solid rgba(109, 109, 109, 0.527);
@@ -65,7 +85,7 @@ body.night {
   color: white;
 }
 
-.highlighted {
+.different-months {
   color: rgba(109, 109, 109, 0.527);
 }
 
@@ -116,7 +136,8 @@ input[type="checkbox"]:checked+label::before {
   margin: 0;
   position: absolute;
   bottom: 0;
-  margin-left: 20%;
+  margin-left: 25%;
+  margin-bottom: 8%;
   color: red;
   font-size: 1.3vmax;
 }
